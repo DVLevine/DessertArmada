@@ -1,0 +1,29 @@
+<%= javascript_include_tag "application" %>
+<% require 'fastimage' %>
+
+<h1>Crop Meal Image</h1>
+<div style="width:600px; height:600px; overflow:hidden">
+    <%= image_tag @meal.image_url(:original), :id => "cropbox" %>
+</div>
+
+<h4>Preview</h4>
+<div style="width:250px; height:250px; overflow:hidden">
+    <%= image_tag @meal.image.url(:original), :id => "preview" %>
+</div>
+
+<%= form_for @meal do |f| %>
+    <% %w[x y w h].each do |attribute| %>
+	<%= f.text_field "crop_#{attribute}" %><br>
+    <% end %>
+    <div class="actions">
+      <%= submit_tag "Crop",:class => 'postfix button expand' %>
+    </div>
+<% end %>
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+defmodule FoodMapping do
+
+	# For serving size use a plate for reference
+	# Use a bowl for reference
+
+	#
+	# 
+
+	def struct name: "food name" servingSize: "1 cup" 
+
+	
+
+
+end

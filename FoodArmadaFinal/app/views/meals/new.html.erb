@@ -1,0 +1,11 @@
+<%= form_for @meal, :html => {:multipart => true} do |f| %>
+    <%= f.hidden_field :user_id %>
+    <p>
+	<%= f.file_field :image %>
+    </p>
+
+    <div class="actions">
+      <%= submit_tag "Crop",:class => 'postfix button expand' %>
+    </div>
+    
+<% end %>

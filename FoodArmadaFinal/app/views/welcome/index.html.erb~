@@ -1,0 +1,37 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dessert Armada</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  
+  <body>
+    <div class = "row">
+      <div class="panel">
+	<p> Welcome to the Armada </p>
+      </div>
+    </div>
+    
+    <ul class="breadcrumbs">
+      <li><a href="#">My Home</a></li>
+      <li><a href="#">Cats</a></li>
+      <li class="unavailable"><a href="#">Dogs</a></li>
+      <li class="current"><a href="#">Justice</a></li>
+    </ul>
+    
+  </body>
+  
+  
+  
+  
+  <div>
+
+
+<h1> dfd </h1>
+
+
+
+</html>

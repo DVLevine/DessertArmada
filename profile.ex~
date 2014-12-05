@@ -1,0 +1,9 @@
+defmodule Profile do
+
+	defstruct name: "My Name", gender: :m, weight: 0, height: 0, age: 0
+	@type t :: %Profile{ name: String.t, gender: atom, weight: integer, height: integer, age: integer}}
+
+	
+
+end
+

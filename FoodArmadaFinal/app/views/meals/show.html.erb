@@ -1,0 +1,14 @@
+<head> </head>
+<% javascript_include_tag "application" %>
+
+<body>
+
+<ul class="clearing-thumbs" data-clearing>
+  <% @user.meals.each do |meal| %>
+  <li>
+    <%= image_tag meal.image_url(:thumb).to_s %>
+  </li>
+  <% end %>
+</ul>
+
+</body>

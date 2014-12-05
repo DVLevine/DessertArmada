@@ -1,0 +1,8 @@
+digraph models_diagram {
+	graph[overlap=false, splines=true]
+	"FoodMapping" [shape=Mrecord, label="{FoodMapping|id :integer\lbiotin :float\lcholine :float\lfolate :float\lfolic_acid :float\lniacin :float\lriboflavin :float\lthiamin :float\lvitamin_A :float\lvitamin_B12 :float\lvitamin_B6 :float\lvitamin_C :float\lvitamin_D :float\lvitamin_E :float\lvitamin_K :float\lpanto_acid :float\lcalories :integer\lfatCalories :integer\lfiber :float\lprotein :float\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"Meal" [shape=Mrecord, label="{Meal|id :integer\luser_id :integer\limage :string\lcrop_x :integer\lcrop_y :integer\lcrop_w :integer\lcrop_h :integer\lcreated_at :datetime\lupdated_at :datetime\l}"]
+	"User" [shape=Mrecord, label="{User|id :integer\lemail :string\lpassword_digest :string\lauth_token :string\lpassword_reset_token :string\lpassword_reset_sent_at :datetime\lcreated_at :datetime\lupdated_at :datetime\lage :integer\lbmr :float\lgender :integer\lheight :float\lweight :float\l}"]
+	"User" -> "Meal" [arrowtail=odot, arrowhead=crow, dir=both color="#4E2757"]
+	"User" -> "FoodMapping" [arrowtail=odot, arrowhead=dot, dir=both color="#D0419F"]
+}

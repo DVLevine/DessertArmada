@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  biotin: 1.5
+  choline: 1.5
+  folate: 1.5
+  folic_acid: 1.5
+  niacin: 1.5
+  riboflavin: 1.5
+  thiamin: 1.5
+  vitamin_A: 1.5
+  vitamin_B12: 1.5
+  vitamin_B6: 1.5
+  vitamin_C: 1.5
+  vitamin_D: 1.5
+  vitamin_E: 1.5
+  vitamin_K: 1.5
+  panto_acid: 1.5
+  calories: 1
+  fatCalories: 1
+  fiber: 1.5
+  protein: 1.5
+
+two:
+  biotin: 1.5
+  choline: 1.5
+  folate: 1.5
+  folic_acid: 1.5
+  niacin: 1.5
+  riboflavin: 1.5
+  thiamin: 1.5
+  vitamin_A: 1.5
+  vitamin_B12: 1.5
+  vitamin_B6: 1.5
+  vitamin_C: 1.5
+  vitamin_D: 1.5
+  vitamin_E: 1.5
+  vitamin_K: 1.5
+  panto_acid: 1.5
+  calories: 1
+  fatCalories: 1
+  fiber: 1.5
+  protein: 1.5

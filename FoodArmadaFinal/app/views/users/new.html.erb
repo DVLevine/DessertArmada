@@ -1,0 +1,58 @@
+<%= form_for @user do |f| %>
+<div class = "row">
+  <div class = "large-12 columns">
+    <h4> Signup </h4>
+  </div>
+</div>  
+
+
+<% if @user.errors.any? %>
+<div class="error_messages">
+  <h2>Form is invalid</h2>
+  <ul>
+    <% @user.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+<div class="field">
+  <%= f.label :email %><br />
+  <%= f.text_field :email %>
+</div>
+<div class="field">
+  <%= f.label :password %><br />
+  <%= f.password_field :password %>
+</div>
+<div class="field">
+  <%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %>
+</div>
+
+<div class="field">
+  <%= f.label :gender %> <br />
+  <%= f.select :gender, [['male', 1], ['female', 2]] %>
+</div>
+
+<div class="field">
+  <%= f.label :age %> <br />
+  <%= f.number_field :age %>
+</div>
+
+<div class="field">
+  <%= f.label :height, "Height (cm)" %> <br />
+  <%= f.number_field :height %>
+</div>
+
+<div class="field">
+  <%= f.label :weight, "Weight (kg)" %> <br />
+  <%= f.number_field :weight %>
+</div>
+
+
+ 
+<div class="actions"><%= f.submit "Sign Up", :class => 'postfix button expand'%></div>
+  
+  <% end %>
+  
